@@ -5,92 +5,142 @@
     <meta charset="UTF-8">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f6f8;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #f5f7fa;
         }
-        h1 { color: #1f4e79; }
-        h2 { color: #2c3e50; margin-top: 30px; }
-        .section {
+
+        header {
+            background: linear-gradient(90deg, #1f4e79, #2c7be5);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .card {
             background: white;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 25px;
             margin-bottom: 20px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #1f4e79;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1f4e79;
+            color: white;
+        }
+
+        a {
+            color: #2c7be5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
 
-<h1>Sandhya Lethakula</h1>
-<p><b>GCP Certified Data Engineer | BigQuery Specialist | PySpark | SQL</b></p>
+<header>
+    <h1>Sandhya Lethakula</h1>
+    <p>GCP Certified Data Engineer | BigQuery Specialist | PySpark | SQL</p>
+</header>
 
-<div class="section">
-<h2>About Me</h2>
-<p>
-Google Cloud Certified Professional Data Engineer with 4+ years of experience 
-designing and optimizing large-scale data pipelines. 
-Expertise in BigQuery performance tuning, Airflow orchestration, 
-and enterprise data migration from Teradata & Hive to GCP.
-</p>
+<div class="container">
+
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            Google Cloud Certified Professional Data Engineer with 4+ years of experience
+            designing and optimizing large-scale data pipelines. Expertise in BigQuery performance tuning,
+            Airflow orchestration, and enterprise data migration from Teradata & Hive to GCP.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><b>Cloud:</b> BigQuery, Dataflow, Dataproc, Cloud Storage, Pub/Sub, Composer</li>
+            <li><b>Programming:</b> Python, PySpark, SQL</li>
+            <li><b>Tools:</b> Apache Airflow, Apache Beam, Docker, Kubernetes, Teradata</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Professional Experience</h2>
+        <p><b>Prodapt Solutions Pvt. Ltd – Software Engineer (Aug 2021 – Present)</b></p>
+
+        <p><b>CDP – Base Management (Verizon)</b></p>
+        <ul>
+            <li>Migrated Teradata & Hive datasets to BigQuery with partitioning and clustering.</li>
+            <li>Developed Airflow DAGs in Cloud Composer.</li>
+            <li>Optimized BigQuery queries and reduced processing cost.</li>
+        </ul>
+
+        <p><b>GCP Modernization Project</b></p>
+        <ul>
+            <li>Built PySpark applications on Dataproc.</li>
+            <li>Orchestrated pipelines using Airflow.</li>
+            <li>Handled large-scale XML data processing.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Key Projects</h2>
+        <p><b>End-to-End Batch Pipeline</b></p>
+        <p>GCS → Dataproc → BigQuery → Airflow Orchestration</p>
+
+        <p><b>Streaming Pipeline</b></p>
+        <p>Pub/Sub → Dataflow → BigQuery</p>
+
+        <p><b>BigQuery Optimization</b></p>
+        <p>Partitioning, clustering & performance tuning</p>
+    </div>
+
+    <div class="card">
+        <h2>Certification</h2>
+        <p>Google Cloud Certified Professional Data Engineer</p>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: lethakulasandhya369@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sandhyalethakula" target="_blank">Visit Profile</a></p>
+        <p>GitHub: <a href="https://github.com/sandhyalethakula" target="_blank">View Projects</a></p>
+    </div>
+
 </div>
 
-<div class="section">
-<h2>Technical Skills</h2>
-<ul>
-<li><b>Cloud:</b> BigQuery, Dataflow, Dataproc, Cloud Storage, Pub/Sub, Composer</li>
-<li><b>Programming:</b> Python, PySpark, SQL</li>
-<li><b>Tools:</b> Apache Airflow, Apache Beam, Docker, Kubernetes, Teradata</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>Professional Experience</h2>
-
-<p><b>Prodapt Solutions Pvt. Ltd – Software Engineer (Aug 2021 – Present)</b></p>
-
-<p><b>CDP – Base Management (Verizon)</b></p>
-<ul>
-<li>Migrated Teradata & Hive datasets to BigQuery with partitioning and clustering.</li>
-<li>Developed Airflow DAGs in Cloud Composer.</li>
-<li>Optimized BigQuery queries and reduced processing cost.</li>
-</ul>
-
-<p><b>GCP Modernization Project</b></p>
-<ul>
-<li>Built PySpark applications on Dataproc.</li>
-<li>Orchestrated pipelines using Airflow.</li>
-<li>Handled large-scale XML data processing.</li>
-</ul>
-
-</div>
-
-<div class="section">
-<h2>Key Projects</h2>
-
-<p><b>End-to-End Batch Pipeline</b></p>
-<p>GCS → Dataproc (PySpark) → BigQuery → Airflow Orchestration.</p>
-
-<p><b>Streaming Pipeline</b></p>
-<p>Pub/Sub → Dataflow → BigQuery for near real-time analytics.</p>
-
-<p><b>BigQuery Optimization</b></p>
-<p>Implemented partitioning, clustering & query performance tuning.</p>
-
-</div>
-
-<div class="section">
-<h2>Certification</h2>
-<p>Google Cloud Certified Professional Data Engineer</p>
-</div>
-
-<div class="section">
-<h2>Contact</h2>
-<p>Email: lethakulasandhya369@gmail.com</p>
-<p>LinkedIn: www.linkedin.com/in/sandhyalethakula</p>
-<p>GitHub: github.com/sandhyalethakula</p>
-</div>
+<footer>
+    © 2026 Sandhya Lethakula | GCP Data Engineer
+</footer>
 
 </body>
 </html>
